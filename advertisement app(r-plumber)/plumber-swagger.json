@@ -1,0 +1,80 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "returns ssales value considering advertising",
+    "title": "sales after advertising",
+    "version": "1.0.0"
+  },
+  "host": null,
+  "schemes": ["http"],
+  "produces": ["application/json"],
+  "paths": {
+    "/plothp": {
+      "get": {
+        "summary": " Plot a histogram of TV",
+        "responses": {
+          "default": {
+            "description": "Default response."
+          }
+        },
+        "parameters": [],
+        "tags": null
+      }
+    },
+    "/plotam": {
+      "get": {
+        "summary": " Plot a histogram of Radio",
+        "responses": {
+          "default": {
+            "description": "Default response."
+          }
+        },
+        "parameters": [],
+        "tags": null
+      }
+    },
+    "/plotwt": {
+      "get": {
+        "summary": " Plot a histogram of newspaper",
+        "responses": {
+          "default": {
+            "description": "Default response."
+          }
+        },
+        "parameters": [],
+        "tags": null
+      }
+    },
+    "/sales": {
+      "post": {
+        "summary": " Returns the probability whether the car has a manual transmission",
+        "responses": {
+          "default": {
+            "description": "Default response."
+          }
+        },
+        "parameters": [
+          {
+            "name": "newspaper",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "radio",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "TV",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "tags": null
+      }
+    }
+  }
+}
